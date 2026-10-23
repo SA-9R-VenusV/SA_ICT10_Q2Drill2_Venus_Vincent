@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Club Members</title>
+
+  <link rel="stylesheet" href="https://pyscript.net/releases/2024.11.1/core.css">
+  <script type="module" src="https://pyscript.net/releases/2024.11.1/core.js"></script>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 3rem 1rem;
+      background: #081536;
+      font-family: system-ui, sans-serif;
+      color: #1a202c;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 760px;
+      background: #ffffff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    .bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: .6rem;
+      padding: .8rem 1rem;
+      background: #0d245e;
+      color: #ffffff;
+    }
+
+    .bar h1 {
+      flex: 1 1 100%;
+      margin: 0;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .bar input {
+      flex: 1 1 140px;
+      min-width: 0;
+      padding: .5rem .75rem;
+      font-size: .95rem;
+      border: 0;
+      border-radius: 8px;
+      background: #ffffff;
+      color: #1a202c;
+    }
+
+    .bar button {
+      padding: .5rem 1.1rem;
+      font-size: .95rem;
+      font-weight: 600;
+      border: 0;
+      border-radius: 8px;
+      background: #4f8cff;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    .bar button:hover { background: #3a78ee; }
+
+    #output {
+      padding: 1.25rem 1.5rem;
+      background: #ffffff;
+    }
+
+    #output h2 { font-size: 1.15rem; margin: 1rem 0 .5rem; }
+    #output ul { margin: 0; padding-left: 1.2rem; line-height: 1.7; }
+
+    .status {
+      margin: 0;
+      padding: .5rem .75rem;
+      background: #eaf1ff;
+      border-radius: 8px;
+      color: #1d3f91;
+      font-size: .9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="bar">
+      <h1>Student Club Member Manager</h1>
+      <input type="text" id="first-name" placeholder="First name">
+      <input type="text" id="last-name" placeholder="Last name">
+      <button id="add-btn">Add Member</button>
+    </div>
+
+    <div id="output">Loading…</div>
+  </div>
+
+  <script type="py" src="./main.py"></script>
+</body>
+</html>
