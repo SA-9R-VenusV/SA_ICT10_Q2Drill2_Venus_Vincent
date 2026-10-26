@@ -1,9 +1,9 @@
 from pyscript import display, document, when, HTML
 
-grade7  = {"Ana Reyes", "Ben Cruz", "Carla Santos"}
-grade8  = {"Diego Lim", "Elena Garcia", "Ben Cruz"}
-grade9  = {"Felix Tan", "Gina Flores", "Hugo Ramos"}
-grade10 = {"Iris Mendoza", "Jon Bautista", "Kara Aquino"}
+grade7  = {"Kenji Reyes", "Enzo Isidro"}
+grade8  = {"Ezekiel Lim", "Ben Anben"}
+grade9  = {"Lebron James", "John Pork"}
+grade10 = {"Dom Inik", "Tyler James Williams"}
 
 master = grade7 | grade8 | grade9 | grade10
 
